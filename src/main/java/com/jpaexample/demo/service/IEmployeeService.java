@@ -11,6 +11,10 @@ public interface IEmployeeService {
 	
 	Employee getEmployeeById(int id);
 	
+	Employee getCognome();
+	
+	Employee getByName(String name);
+	
 	void addEmployee(Employee e);
 	
 }

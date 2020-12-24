@@ -33,4 +33,16 @@ public class EmployeeServiceImpl implements IEmployeeService{
 		daoRef.save(e);
 	}
 
+	@Override
+	public Employee getCognome() {
+		// TODO Auto-generated method stub
+		return daoRef.getPagnotta();
+	}
+
+	@Override
+	public Employee getByName(String name) {
+		// TODO Auto-generated method stub
+		return daoRef.searchName(name).get(0);
+	}
+
 }

@@ -34,6 +34,23 @@ public class EmployeeController {
 		return empList.toString();
 	}
 	
+	@RequestMapping("/getPagnotta")
+	public String getPagnotta(Model model){
+		//Employee e = new Employee();
+		Employee e=serviceRef.getCognome();
+		//model.addAttribute("employeeList", empList);
+		return e.toString();
+	}
+	
+	
+	@RequestMapping("/getNome")
+	public String getNome(Model model){
+		//Employee e = new Employee();
+		Employee e=serviceRef.getByName("PINCO");
+		//model.addAttribute("employeeList", empList);
+		return e.toString();
+	}
+	
 	
 	
 }
